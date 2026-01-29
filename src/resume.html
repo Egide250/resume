@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV_resume_Egide_NSENGIYUMVA</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap');
+        
+        @page {
+            margin: 0;
+            size: letter;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #000000;
+            line-height: 1.3;
+        }
+        
+        .page {
+            width: 8.5in;
+            height: 11in;
+            margin: 0 auto;
+            background: #ffffff;
+            display: flex;
+            position: relative;
+        }
+        
+        .left-sidebar {
+            width: 2.55in;
+            background: #1e3a5f;
+            color: #ffffff;
+            padding: 0.45in 0.3in 0.4in 0.35in;
+        }
+        
+        .main-content {
+            width: 5.95in;
+            padding: 0.45in 0.45in 0.4in 0.4in;
+            background: #ffffff;
+        }
+        
+        .profile-photo {
+            width: 1.8in;
+            height: 1.8in;
+            border-radius: 50%;
+            background: #2c5282;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.2in auto;
+            border: 4px solid #4a9eff;
+            overflow: hidden;
+        }
+        
+        .profile-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;            
+        }
+        
+        .photo-placeholder {
+            font-size: 48pt;
+            color: #4a9eff;
+            font-weight: 300;
+        }
+        
+        .name-block {
+            margin-bottom: 0.25in;
+        }
+        
+        .last-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 34pt;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            line-height: 1;
+            margin-bottom: 0.05in;
+            color: #1e3a5f;
+        }
+        
+        .first-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 26pt;
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            line-height: 1;
+            margin-bottom: 0.1in;
+            color: #1e3a5f;
+        }
+        
+        .subtitle {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12pt;
+            font-weight: 400;
+            color: #4a9eff;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+        
+        .sidebar-section {
+            margin-bottom: 0.28in;
+        }
+        
+        .sidebar-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11pt;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 0.1in;
+            padding-bottom: 0.05in;
+            border-bottom: 2pt solid #4a9eff;
+        }
+        
+        .sidebar-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 9.5pt;
+            font-weight: 300;
+            line-height: 1.5;
+            margin-bottom: 0.08in;
+        }
+        
+        .sidebar-text:last-child {
+            margin-bottom: 0;
+        }
+        
+        .education-entry {
+            margin-bottom: 0.14in;
+        }
+        
+        .education-entry:last-child {
+            margin-bottom: 0;
+        }
+        
+        .education-degree {
+            font-size: 9.5pt;
+            font-weight: 600;
+            line-height: 1.35;
+            margin-bottom: 0.03in;
+        }
+        
+        .education-school {
+            font-size: 9.5pt;
+            font-weight: 300;
+            line-height: 1.35;
+        }
+        
+        .main-section {
+            margin-bottom: 0.24in;
+        }
+        
+        .main-heading {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12pt;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #1e3a5f;
+            margin-bottom: 0.1in;
+            padding-bottom: 0.05in;
+            border-bottom: 2pt solid #4a9eff;
+        }
+        
+        .summary-text {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 9.5pt;
+            font-weight: 300;
+            line-height: 1.6;
+            text-align: justify;
+            color: #2d3748;
+        }
+        
+        .skills-list {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 9.5pt;
+            font-weight: 300;
+            line-height: 1.6;
+            color: #2d3748;
+        }
+        
+        .skill-category {
+            margin-bottom: 0.08in;
+        }
+        
+        .skill-label {
+            font-weight: 600;
+        }
+        
+        .experience-entry {
+            margin-bottom: 0.2in;
+        }
+        
+        .experience-entry:last-child {
+            margin-bottom: 0;
+        }
+        
+        .job-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 10pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #1e3a5f;
+            line-height: 1.35;
+            margin-bottom: 0.04in;
+        }
+        
+        .job-date {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 8.5pt;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #718096;
+            line-height: 1.3;
+            margin-bottom: 0.06in;
+        }
+        
+        .job-description {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 9.5pt;
+            font-weight: 300;
+            line-height: 1.6;
+            color: #2d3748;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="left-sidebar">
+            <div class="profile-photo">
+                <!-- <div class="photo-placeholder">E</div> -->
+                 <!-- <img src="your-photo.jpg" alt="Profile Photo"> -->
+                 <img src="images/egide.jpeg" class="profile-picture" alt="Egide Nsengiyumva">
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-heading">CONTACT</div>
+                <div class="sidebar-text">egiderw1@gmail.com</div>
+                <div class="sidebar-text">+250 785 484 434</div>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-heading">ADDRESS</div>
+                <div class="sidebar-text">kigali kicukiro</div>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-heading">EDUCATION</div>
+                <div class="education-entry">
+                    <div class="education-degree">Bachelor in information technology</div>
+                    <div class="education-school">University of Kigali</div>
+                </div>
+                <div class="education-entry">
+                    <div class="education-degree">Associate Degree in information technology</div>
+                    <div class="education-school">Tumba college of technology (IPRC Tumba)</div>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-heading">LANGUAGE</div>
+                <div class="sidebar-text">English</div>
+                <div class="sidebar-text">kinyarwanda</div>
+                <div class="sidebar-text">French (basics)</div>
+                <div class="sidebar-text">kiswahili (basics)</div>
+            </div>
+            
+            <div class="sidebar-section">
+                <div class="sidebar-heading">CERTIFICATIONS</div>
+                <div class="sidebar-text">CCNA (Cisco Certified Network Associate) kinyarwanda</div>
+                <div class="sidebar-text">ISC² Certified in Cybersecurity credential.kiswahili (basics)</div>
+                <div class="sidebar-text">Fortinet Certified Associate Cybersecurity from Fortinet!</div>
+                <div class="sidebar-text">Google IT Support Professional from Google!</div>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="name-block">
+                <div class="last-name">NSENGIYUNVA</div>
+                <div class="first-name">Egide</div>
+                <div class="subtitle">IT Enthusiast</div>
+            </div>
+            
+            <div class="main-section">
+                <div class="main-heading">PROFESSIONAL SUMMARY</div>
+                <div class="summary-text">Detail-oriented IT professional with an Associate Degree in Information Technology obtained from iprc tumba , a Cisco CCNA certification, and Bachelor's degree studies in university of kigali. Skilled in network administration, application support, and database management, with hands-on experience in troubleshooting, system integration, and network reliability. Proficient in multiple programming languages (Java, C#, PHP, Python) and database platforms (Oracle, MySQL, MS SQL). Adept at analyzing complex system transactions, ensuring data integrity, and supporting business-critical applications. Known for strong problem-solving skills, adaptability, and a proactive approach to delivering innovative, high-performing IT solutions aligned with business goals.</div>
+            </div>
+            
+            <div class="main-section">
+                <div class="main-heading">SKILLS SUMMARY</div>
+                <div class="skills-list">
+                    <div class="skill-category"><span class="skill-label">Programming languages :</span> java, python, php, bash scripting</div>
+                    <div class="skill-category"><span class="skill-label">Databases :</span> ms sql, oracle, Postgres, mysql, mariadb</div>
+                    <div class="skill-category"><span class="skill-label">Networking:</span> routing/switching ,security ,troubleshooting and automation</div>
+                    <div class="skill-category"><span class="skill-label">Systems :</span> (windows , ios , linux/unix) administration</div>
+                    <div class="skill-category"><span class="skill-label">tools :</span> wireshark, cisco cli , powershel</div>
+                    <div class="skill-category"><span class="skill-label">trending techs :</span> cloud conputing , artificial intelligence,SDN,IOT</div>
+                </div>
+            </div>
+            
+            <div class="main-section">
+                <div class="main-heading">EXPERIENCE</div>
+                
+                <div class="experience-entry">
+                    <div class="job-title">IT INTERN AT LOLC UNGUKA FINANCE PLC</div>
+                    <div class="job-date">2025-OCTOBER - NOW</div>
+                    <div class="job-description">providing technical support, assisting with hardware/software maintenance, troubleshooting user issues, supporting network operations, and maintaining IT documentation.</div>
+                </div>
+                
+                <div class="experience-entry">
+                    <div class="job-title">TECHNOLOGY & INNOVATION EXPERIENCE (KLAB, FABLAB, ICT CHAMBER, RISA) | 2022 – 2025</div>
+                    <div class="job-description">Gained hands-on experience in software development and digital design, building frontend and backend applications, UI/UX interfaces, and WordPress websites for real-world projects using modern web technologies.</div>
+                </div>
+                
+                <div class="experience-entry">
+                    <div class="job-title">IT SUPPORT INTERNSHIP AT RWANDA ENERGY GROUP KIGALI RANDWA KACYIRU BRANCH</div>
+                    <div class="job-date">2021-SEPTMBER - DECEMBER</div>
+                    <div class="job-description">Provided technical assistance and support, gaining handson experience with troubleshooting and network management.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
